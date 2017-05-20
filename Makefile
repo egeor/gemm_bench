@@ -12,9 +12,5 @@ default: bench
 bench: bench.c ./libxsmm/include/libxsmm.h
 	$(CC) $(CFLAGS) bench.c $(LDFLAGS) -o bench
 
-layer_example_v1: layer_example_v1.c ./libxsmm/include/libxsmm.h
-	$(CC) $(CFLAGS) layer_example_v1.c $(LDFLAGS) -o layer_example_v1
-
-
 clean: 
 	rm -rf bench
